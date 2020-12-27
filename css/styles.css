@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Estos estilos definen la barra de navegación */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+    background-color: white;
+}
+
+li {
+    float: left;
+    width: 17%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background-image: url("../img/backimg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+
+/*Clases de columnas*/
+
+.one-column {
+    float: center;
+    width: 100%;
+}
+
+.one-column h1 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.two-column img {
+    width: 100%;
+    height: 33vmax;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    margin-bottom: -5px;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+#section-1 {
+    background-color: #e1cae4;
+}
+
+#section-2 {
+    background-color: thistle;
+}
+
+#section-2 h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#section-2 img {
+    width: 300px;
+    height: 700px;
+    margin-left: 30%;
+}
+
+#section-3 {
+    margin-top: 700px;
+    background-color: thistle;
+}
+
+#section-3 iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#section-4 {
+    text-align: center;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*Clases auxiliares*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-device-width:700px) {
+    /* Responsive layout */
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    li a {
+        font-size: 14px;
+        display: inline-block;
+    }
+    ul {
+        padding: 0px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    li {
+        width: 50%;
+        display: inline-block;
+        float: none;
+    }
+    #section-2 {
+        width: 100%;
+        margin-left: 0px;
+        font-size: 40px;
+    }
+}
